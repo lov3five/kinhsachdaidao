@@ -40,6 +40,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          sidebarCollapsible: true,
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
@@ -66,7 +67,7 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: 'Kinh Sách Đại Đạo',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
@@ -74,27 +75,41 @@ const config = {
         items: [
           {
             type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            sidebarId: 'kinhSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Kinh',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
           {
+            type: 'docSidebar',
+            sidebarId: 'sachSidebar',
+            position: 'left',
+            label: 'Sách',
+          },
+          /* {to: '/blog', label: 'Blog', position: 'left'}, */
+          /* {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
+            position: 'right',
+          }, */
+          {
+            type: 'search',
             position: 'right',
           },
         ],
       },
       footer: {
-        style: 'dark',
+        //style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Tài liệu',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Kinh',
+                to: 'docs/kinh',
+              },
+              {
+                label: 'Sách',
+                to: 'docs/sach',
               },
             ],
           },
