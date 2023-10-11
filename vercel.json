@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "docusaurus.config.js",
+      "use": "@vercel/node",
+      "config": {
+        "maxDuration": 120,
+        "staticFiles": "build"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/static/(.*)",
+      "dest": "/static/$1"
+    },
+    {
+      "src": "/images/(.*)",
+      "dest": "/static/images/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "docusaurus.config.js"
+    }
+  ]
+}
