@@ -3,6 +3,8 @@
   "position": 2,
   "link": {
     "type": "generated-index",
-    "slug": "/kinh-thien-dao-va-the-dao/",
-  }
+    "slug": "/kinh-thien-dao-va-the-dao/"
+  },
+  "collapsible": false,
+  "collapsed": true
 }
