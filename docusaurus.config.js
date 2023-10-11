@@ -66,7 +66,7 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: 'Kinh Sách Đại Đạo',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
@@ -74,11 +74,17 @@ const config = {
         items: [
           {
             type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            sidebarId: 'kinhSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Kinh',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {
+            type: 'docSidebar',
+            sidebarId: 'sachSidebar',
+            position: 'left',
+            label: 'Sách',
+          },
+          /* {to: '/blog', label: 'Blog', position: 'left'}, */
           {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
@@ -87,14 +93,18 @@ const config = {
         ],
       },
       footer: {
-        style: 'dark',
+        //style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Tài liệu',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Kinh',
+                to: 'docs/kinh',
+              },
+              {
+                label: 'Sách',
+                to: 'docs/sach',
               },
             ],
           },
