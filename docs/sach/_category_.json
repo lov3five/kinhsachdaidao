@@ -1,0 +1,7 @@
+{
+    label: "Sách",
+    link: {
+        type: "generated-index",
+        slug: "/sach/"
+    },
+}

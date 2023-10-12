@@ -105,7 +105,7 @@ const config = {
             items: [
               {
                 label: 'Kinh',
-                to: 'docs/kinh',
+                to: 'docs/kinh/kinh-thien-dao-va-the-dao',
               },
               {
                 label: 'Sách',

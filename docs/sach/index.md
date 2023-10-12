@@ -1,6 +1,3 @@
 ---
-sidebar_position: 1
 ---
-
-# Sách
-
+# Đang cập nhật...
