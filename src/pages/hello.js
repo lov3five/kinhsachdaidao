@@ -14,6 +14,14 @@ export default function Hello() {
         }}>
         <h1>Hello World</h1>
       </div>
+      <div class="alert alert--primary" role="alert">
+  <button aria-label="Close" class="clean-btn close" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  This is a
+  <strong>primary</strong>
+  alert. You should probably pay attention to it.
+</div>
     </Layout>
   );
 }

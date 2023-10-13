@@ -1,4 +1,8 @@
-# Kinh Thức Dậy
+---
+title: "Kinh Thức Dậy"
+---
+
+# KINH THỨC DẬY
 
 (Giọng nam xuân)
 

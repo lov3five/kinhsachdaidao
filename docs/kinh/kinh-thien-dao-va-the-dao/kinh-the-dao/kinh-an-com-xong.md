@@ -1,4 +1,9 @@
-# Kinh Ăn Cơm Xong
+---
+title: "Kinh Ăn Cơm Xong"
+sidebar_position: 2
+---
+
+# KINH ĂN CƠM XONG
 
 (Giọng nam xuân)
 

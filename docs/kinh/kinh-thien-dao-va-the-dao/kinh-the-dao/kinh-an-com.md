@@ -1,4 +1,9 @@
-# Kinh Ăn Cơm
+---
+title: "Kinh Ăn Cơm"
+sidebar_position: 1
+---
+
+# KINH ĂN CƠM
 
 (Giọng nam xuân)
 

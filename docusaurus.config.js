@@ -30,8 +30,8 @@ const config = {
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'vi',
+    locales: ['vi'],
   },
 
   presets: [
@@ -40,19 +40,23 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          // Sidebar collapsible
           sidebarCollapsible: true,
+
+          // Docs folder path relative to website dir.
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+
+          /* editUrl:
+            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/', */
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+         /*  editUrl:
+            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/', */
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -66,12 +70,33 @@ const config = {
     ({
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
+
+      docs: {
+        sidebar: {
+          hideable: true,
+          autoCollapseCategories: true,
+        },
+      },
+
+      colorMode: {
+        defaultMode: 'light',
+        disableSwitch: false,
+        respectPrefersColorScheme: true,
+      },
+
+      /* announcementBar: {
+        id: 'announcementBar-2', // Increment on change
+        content: `⭐️ If you like Docusaurus, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/facebook/docusaurus">GitHub</a> and follow us on <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/docusaurus">Twitter</a>`,
+      }, */
+
       navbar: {
         title: 'Kinh Sách Đại Đạo',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
         },
+        hideOnScroll: true,
+
         items: [
           {
             type: 'docSidebar',
@@ -84,6 +109,11 @@ const config = {
             sidebarId: 'sachSidebar',
             position: 'left',
             label: 'Sách',
+          },
+          {
+            to: '/docs/intro',
+            label: 'Giới thiệu',
+            position: 'left',
           },
           /* {to: '/blog', label: 'Blog', position: 'left'}, */
           /* {
@@ -113,7 +143,7 @@ const config = {
               },
             ],
           },
-          {
+         /*  {
             title: 'Community',
             items: [
               {
@@ -129,22 +159,22 @@ const config = {
                 href: 'https://twitter.com/docusaurus',
               },
             ],
-          },
+          }, */
           {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: 'Giới thiệu',
+                to: '/docs/intro',
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/lov3five/kinhsachdaidao',
               },
             ],
           },
         ],
-        copyright: `Kinh Sách Đại Đạo © ${yearBuilt}${new Date().getFullYear()}. Built with Docusaurus.`,
+        copyright: `Kinh Sách Đại Đạo © ${yearBuilt}${new Date().getFullYear()}`,
       },
       prism: {
         theme: lightCodeTheme,
